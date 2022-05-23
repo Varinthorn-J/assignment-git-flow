@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.12 on win32)" generated="20220522 23:40:53.988" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.12 on win32)" generated="20220523 09:47:34.422" rpa="false" schemaversion="3">
 <suite id="s1" name="Search Random Number" source="D:\work\assignment\assignment-git-flow\assignment-git-flow\testcases\search_random_number.robot">
 <test id="s1-t1" name="TC-002" line="7">
 <kw name="go to lotuss web" library="search_random_number_keywords">
@@ -7,56 +7,56 @@
 <arg>${lotuss_web}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220522 23:40:54.732" level="INFO">Opening browser 'chrome' to base url 'https://www.lotuss.com/th'.</msg>
-<status status="PASS" starttime="20220522 23:40:54.731" endtime="20220522 23:40:57.277"/>
+<msg timestamp="20220523 09:47:34.746" level="INFO">Opening browser 'chrome' to base url 'https://www.lotuss.com/th'.</msg>
+<status status="PASS" starttime="20220523 09:47:34.745" endtime="20220523 09:47:36.717"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220522 23:40:57.277" endtime="20220522 23:40:57.403"/>
+<status status="PASS" starttime="20220523 09:47:36.717" endtime="20220523 09:47:36.830"/>
 </kw>
-<status status="PASS" starttime="20220522 23:40:54.731" endtime="20220522 23:40:57.403"/>
-</kw>
-<kw name="Generate Random Numbers" library="utils">
-<var>${search_numbers}</var>
-<msg timestamp="20220522 23:40:57.405" level="INFO">${search_numbers} = 3232518</msg>
-<status status="PASS" starttime="20220522 23:40:57.404" endtime="20220522 23:40:57.405"/>
+<status status="PASS" starttime="20220523 09:47:34.745" endtime="20220523 09:47:36.831"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${search_input}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20220522 23:40:58.230" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status status="PASS" starttime="20220522 23:40:57.406" endtime="20220522 23:40:58.471"/>
+<msg timestamp="20220523 09:47:37.785" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20220523 09:47:36.832" endtime="20220523 09:47:38.056"/>
+</kw>
+<kw name="Generate Random Numbers" library="utils">
+<var>${search_numbers}</var>
+<msg timestamp="20220523 09:47:38.056" level="INFO">${search_numbers} = 540447</msg>
+<status status="PASS" starttime="20220523 09:47:38.056" endtime="20220523 09:47:38.056"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${search_input}</arg>
 <arg>${search_numbers}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220522 23:40:58.472" level="INFO">Typing text '3232518' into text field '//input[@id="search-bar-input"]'.</msg>
-<status status="PASS" starttime="20220522 23:40:58.472" endtime="20220522 23:40:58.615"/>
+<msg timestamp="20220523 09:47:38.057" level="INFO">Typing text '540447' into text field '//input[@id="search-bar-input"]'.</msg>
+<status status="PASS" starttime="20220523 09:47:38.057" endtime="20220523 09:47:38.156"/>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <arg>${search_input}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220522 23:40:58.616" level="INFO">Sending key(s) ('ENTER',) to //input[@id="search-bar-input"] element.</msg>
-<msg timestamp="20220522 23:40:58.935" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20220522 23:40:58.935" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20220522 23:40:58.616" endtime="20220522 23:40:59.588"/>
+<msg timestamp="20220523 09:47:38.157" level="INFO">Sending key(s) ('ENTER',) to //input[@id="search-bar-input"] element.</msg>
+<msg timestamp="20220523 09:47:38.485" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20220523 09:47:38.485" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20220523 09:47:38.157" endtime="20220523 09:47:39.244"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${search_result}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220522 23:40:59.588" endtime="20220522 23:41:01.046"/>
+<status status="PASS" starttime="20220523 09:47:39.245" endtime="20220523 09:47:40.299"/>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <arg>${search_result}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220522 23:41:01.052" level="INFO">Current page contains element '//*[@id="spa-root"]/div/div[1]/div[2]/div[1]/div/div[1]/div/p[1]'.</msg>
-<status status="PASS" starttime="20220522 23:41:01.046" endtime="20220522 23:41:01.052"/>
+<msg timestamp="20220523 09:47:40.307" level="INFO">Current page contains element '//*[@id="spa-root"]/div/div[1]/div[2]/div[1]/div/div[1]/div/p[1]'.</msg>
+<status status="PASS" starttime="20220523 09:47:40.299" endtime="20220523 09:47:40.307"/>
 </kw>
-<status status="PASS" starttime="20220522 23:40:54.730" endtime="20220522 23:41:01.052"/>
+<status status="PASS" starttime="20220523 09:47:34.744" endtime="20220523 09:47:40.308"/>
 </test>
-<status status="PASS" starttime="20220522 23:40:53.990" endtime="20220522 23:41:01.053"/>
+<status status="PASS" starttime="20220523 09:47:34.424" endtime="20220523 09:47:40.309"/>
 </suite>
 <statistics>
 <total>
