@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.12 on win32)" generated="20220522 23:34:06.394" rpa="false" schemaversion="3">
+<suite id="s1" name="Login Test" source="D:\work\assignment\assignment-git-flow\assignment-git-flow\testcases\login_test.robot">
+<test id="s1-t1" name="TC-001" line="7">
+<kw name="go to lotuss web" library="login_test_keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${lotuss_web}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220522 23:34:06.591" level="INFO">Opening browser 'chrome' to base url 'https://www.lotuss.com/th'.</msg>
+<status status="PASS" starttime="20220522 23:34:06.591" endtime="20220522 23:34:09.147"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220522 23:34:09.147" endtime="20220522 23:34:09.272"/>
+</kw>
+<status status="PASS" starttime="20220522 23:34:06.590" endtime="20220522 23:34:09.273"/>
+</kw>
+<kw name="login" library="login_test_keywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//*[@id="header-login-link"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220522 23:34:09.275" endtime="20220522 23:34:09.956"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="header-login-link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220522 23:34:09.956" level="INFO">Clicking element '//*[@id="header-login-link"]'.</msg>
+<status status="PASS" starttime="20220522 23:34:09.956" endtime="20220522 23:34:10.114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${input_username}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220522 23:34:10.114" endtime="20220522 23:34:11.507"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220522 23:34:11.507" level="INFO">Typing text '0909010166' into text field '//*[@class="MuiInputBase-input MuiFilledInput-input"]'.</msg>
+<status status="PASS" starttime="20220522 23:34:11.507" endtime="20220522 23:34:11.635"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220522 23:34:11.636" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20220522 23:34:11.702" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220522 23:34:11.794" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220522 23:34:11.635" endtime="20220522 23:34:11.794"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220522 23:34:11.795" level="INFO">Clicking button '//*[@id="login"]'.</msg>
+<status status="PASS" starttime="20220522 23:34:11.794" endtime="20220522 23:34:11.900"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${profile}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220522 23:34:11.900" endtime="20220522 23:34:14.262"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>${profile}</arg>
+<arg>Success</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220522 23:34:14.269" level="INFO">Current page contains element '//*[@id="my-profile-button"]/div/span'.</msg>
+<status status="PASS" starttime="20220522 23:34:14.262" endtime="20220522 23:34:14.269"/>
+</kw>
+<status status="PASS" starttime="20220522 23:34:09.274" endtime="20220522 23:34:14.269"/>
+</kw>
+<status status="PASS" starttime="20220522 23:34:06.589" endtime="20220522 23:34:14.270"/>
+</test>
+<status status="PASS" starttime="20220522 23:34:06.395" endtime="20220522 23:34:14.271"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
