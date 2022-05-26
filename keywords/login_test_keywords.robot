@@ -2,7 +2,7 @@
 Resource  ../import.robot
 
 *** Keywords ***
-go to lotuss web 
+go to 
   Open Browser  ${lotuss_web}  chrome
   Maximize Browser Window
   
@@ -15,7 +15,8 @@ login
   Input Password  ${input_password}  ${password}
   Click Button  //*[@id="login"]
   Wait Until Element Is Visible  ${profile} 
-  Page Should Contain Element  ${profile}  Success  
+  Page Should Contain Element  ${profile}  Success
+  Close Browser  
   
 
 
